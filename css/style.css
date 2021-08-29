@@ -1,0 +1,167 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100vw;
+  height: 100vh;
+}
+
+.wave {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  z-index: -1;
+}
+
+.img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.img img {
+  width: 500px;
+}
+
+form {
+  width: 360px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  height: 100px;
+}
+
+.welcome-header {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: #333;
+}
+
+.input-div {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  position: relative;
+  padding: 5px 0;
+  margin: 25px 0;
+  border-bottom: 2px solid #1abb74;
+}
+
+.i {
+  color: #1abb74;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-login {
+  height: 45px;
+  position: relative;
+}
+
+.text-h5 {
+  font-size: 18px;
+  color: #999;
+  left: 10px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: -50%;
+}
+
+.username {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-div.pass {
+  margin-bottom: 4px;
+}
+
+.forgot {
+  color: #999;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+}
+
+.forgot:hover {
+  color: #1abb74;
+  cursor: pointer;
+}
+
+.button {
+  background: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+  height: 50px;
+  border-radius: 25px;
+  width: 100%;
+  margin: 1rem 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .login-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+  form {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .login-container {
+    justify-content: center;
+  }
+}
